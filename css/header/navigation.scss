@@ -1,0 +1,181 @@
+.navigation {
+  @include respond-above(md) {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    position: static;
+    transform: translateY(0);
+    order: 4;
+    padding: 0;
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  @include respond-between(sm, md) {
+    padding: 50px;
+  }
+
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  background: rgb(245, 81, 81);
+  background: linear-gradient(0deg, rgba(245, 81, 81, 1) 0%, rgba(237, 135, 135, 1) 0%, rgba(255, 255, 255, 1) 70%);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 105px;
+  padding: 20px;
+  z-index: 2;
+
+  .show-nav & {
+    transform: translateX(0);
+  }
+
+  &__list.accordion__list {
+    @include respond-above(md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    @include respond-above(lg) {
+      width: 80%;
+      column-gap: 20px;
+    }
+
+    @include respond-between(md, lg) {
+      width: 90%;
+      column-gap: 15px;
+    }
+
+    row-gap: 15px;
+  }
+
+  &__item {
+    @include respond-above(md) {
+
+      i,
+      span,
+      input {
+        display: none;
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    a {
+      @include respond-above(md) {
+        width: auto;
+        font-size: 14px;
+        height: auto;
+      }
+
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      z-index: 1;
+      text-decoration: none;
+      background-image: linear-gradient(#f62f5e, #f62f5e);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      height: 30px;
+      transition: background-size 0.3s;
+
+      &:hover {
+        color: black;
+        background-size: 100% 2px;
+      }
+    }
+
+    &-dropdown.navigation__item.accordion__item {
+      i {
+        transform: translate(-20px, 0);
+      }
+
+      & input {
+        &[type=checkbox] {
+          height: 35px;
+        }
+      }
+
+      @include respond-above(md) {
+
+        &:hover>.navigation__dropdown.accordion__info {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          opacity: 1;
+          overflow: visible;
+          margin-top: 0;
+          max-height: none;
+          transform: translate(0, 0);
+          position: absolute;
+          padding: 20px;
+          left: 0;
+          top: 20px;
+          background: rgb(245, 81, 81);
+          background: linear-gradient(0deg, rgba(245, 81, 81, 1) 0%, rgba(237, 135, 135, 1) 0%, rgba(255, 255, 255, 1) 90%);
+
+          li {
+            a {
+              color: black
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .accordion__list .accordion__item {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 0;
+    border-top: none;
+    position: static;
+
+    .navigation__dropdown {
+
+      @include respond-above(md) {
+        display: none;
+      }
+
+      width: 100%;
+
+      .accordion__info {
+        font-style: italic;
+      }
+
+      &-img {
+        font-size: 16px;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        background: none;
+
+        img {
+          @include respond-above(md) {
+            display: block;
+
+            &:hover {
+              box-shadow: 0px 0px 10px 1px #000000;
+            }
+          }
+
+          display: none;
+          height: 100%;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

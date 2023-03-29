@@ -1,0 +1,237 @@
+.footer {
+  background: rgb(245, 81, 81);
+  background: linear-gradient(180deg, rgba(245, 81, 81, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 231, 231, 1) 100%);
+
+  &__block {
+    &-1 {
+      @include respond-above(sm) {
+        display: flex;
+        flex-direction: column;
+        column-gap: 40px;
+        padding: 20px 0;
+        flex: 2;
+
+        .footer-box-title {
+          flex-basis: 100%;
+        }
+      }
+
+      .footer-box-content {
+        margin-bottom: 10px;
+
+        .small {
+          color: gray;
+          margin-bottom: 10px;
+        }
+
+        .form-control:focus-visible {
+          outline: none;
+          border-bottom: 1px solid black;
+        }
+      }
+
+      .footer-box-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .footer--newsletter-form {
+        position: relative;
+        border-bottom: 1px solid gray;
+
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+
+        .form-control {
+          border: none;
+          width: 100%;
+          height: 30px;
+          background-color: transparent;
+        }
+
+        .send-email {
+          border: none;
+          background-color: transparent;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &-2 {
+      padding: 0 0 20px;
+      border-bottom: 1px solid gray;
+
+      @include respond-above(md) {
+        padding: 0 0 20px;
+      }
+
+      .accordion__item {
+        .accordion__title {
+          font-size: 16px;
+        }
+      }
+
+      .menu-footer {
+        &__list {
+          padding: 0;
+          margin-bottom: 0;
+
+          a {
+            color: black;
+          }
+        }
+
+        &__item {
+          text-align: center;
+
+          &+.menu-footer__item {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .accordion {
+        &__list {
+          margin-bottom: 20px;
+
+          @include respond-above(md) {
+            margin-bottom: 0;
+          }
+        }
+
+        &__list-inner {
+          @include respond-above(md) {
+            padding: 0;
+          }
+
+          li a {
+            font-size: 14px;
+            line-height: 22px;
+            color: black;
+          }
+        }
+
+        &__info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .contact-us {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        &__link {
+          color: black;
+          font-size: 16px;
+
+          h4 {
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      @include respond-above(md) {
+        display: flex;
+        column-gap: 80px;
+
+        .accordion__item input,
+        .accordion__item i {
+          display: none;
+        }
+
+        .accordion__list {
+          display: flex;
+          justify-content: space-between;
+          flex: 3;
+
+          .accordion__item .accordion__title+.footer-box-content.accordion__info {
+            max-height: 100%;
+            opacity: 1;
+            transform: none;
+          }
+        }
+
+        .accordion__item {
+          border: none;
+        }
+      }
+    }
+
+    &-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+
+      .social-links {
+        margin-bottom: 12px;
+        width: 100%;
+
+        .bottom--social-box {
+          justify-content: center;
+
+          .fb,
+          .instagram,
+          .yb {
+            @include respond-above(sm) {
+              width: 45px;
+              height: 45px;
+            }
+          }
+        }
+      }
+
+      .copyright {
+        color: gray;
+        text-align: center;
+        font-size: 10px;
+
+        @include respond-above(sm) {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+
+      .legal--payment-box {
+        margin-bottom: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .social-links .bottom--social-box {
+        display: flex;
+        column-gap: 10px;
+
+        a {
+          border: 2px solid gray;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+        }
+
+        i {
+          color: gray;
+        }
+      }
+    }
+  }
+}

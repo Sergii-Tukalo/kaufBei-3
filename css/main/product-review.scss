@@ -1,0 +1,62 @@
+.product__review {
+  margin-bottom: 30px;
+
+  .faq_form-box-inner {
+    border-radius: 0;
+  }
+
+  .text-dark.fw-semibold {
+    font-size: 16px;
+  }
+
+  .list_add-faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq_box-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .secondary-color {
+    font-size: 20px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.accordian-link h3 {
+  font-size: clamp(18px, 2vw, 30px);
+}
+
+.user_image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background: #00000030;
+  border-radius: 50%;
+  padding: .20rem;
+}
+
+.review_answer {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.review_answer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.review_answer::-webkit-scrollbar-track {
+  background: rgb(189, 190, 189);
+  border-radius: 8px;
+}
+
+.review_answer::-webkit-scrollbar-thumb {
+  background-color: green;
+  outline: 1px solid darkgreen;
+  border-radius: 8px;
+}

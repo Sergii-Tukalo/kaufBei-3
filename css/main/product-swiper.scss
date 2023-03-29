@@ -1,0 +1,152 @@
+.swiper-container {
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond-above(md) {
+    min-height: 320px;
+  }
+
+  &-wrapper {
+    display: flex;
+
+    @include respond-above(md) {
+      flex-flow: row nowrap;
+    }
+  }
+}
+
+.swiper-button {
+
+  &-next,
+  &-prev {
+    color: #000;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  background-position: center;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Slide content */
+  .description,
+  .title {
+    display: block;
+    opacity: 0;
+    transition: 0.5s ease 0.5s;
+  }
+
+  &-active {
+
+    .description,
+    .title {
+      opacity: 1;
+    }
+
+    .title {
+      margin-bottom: 0.5rem;
+      font-size: 24px;
+      color: #000;
+      transition: opacity 0.5s ease 0.5s;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #777;
+      transition: opacity 0.5s ease 0.75s;
+    }
+  }
+}
+
+.gallery-top {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+
+  @include respond-above(md) {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .product-swiper-button-next,
+  .product-swiper-button-prev {
+    display: none;
+    color: black;
+
+    @include respond-above(md) {
+      width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.gallery-thumbs {
+  display: none;
+
+  @include respond-above (md) {
+    display: block;
+    width: 20%;
+    height: 60vh;
+    padding: 0;
+  }
+
+  .swiper-wrapper {
+    flex-direction: row;
+
+    @include respond-above (md) {
+      flex-direction: column;
+    }
+  }
+
+  .swiper-slide {
+    width: 25%;
+    flex-flow: row nowrap;
+
+    @include respond-above (md) {
+      flex-flow: column nowrap;
+      width: 100%;
+    }
+
+    height: 100%;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+    border: 1px solid black;
+  }
+}
+
+
+.img_producto_container {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.img_producto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.5s ease-out;
+}

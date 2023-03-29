@@ -1,0 +1,42 @@
+.announcements {
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(245, 81, 81);
+    background: linear-gradient(0deg, rgba(245, 81, 81, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 216, 216, 1) 100%);
+    padding: 15px 0;
+
+    @include respond-below(sm) {
+      font-size: 13px;
+      padding: 15px 20px;
+    }
+  }
+
+  .mySwiper-announcements {
+
+    .announcements-swiper-button-next,
+    .announcements-swiper-button-prev {
+      display: none;
+      color: black;
+      height: 20px;
+      transform: translateY(10px);
+
+      @include respond-above(md) {
+        display: block;
+      }
+
+      &::after {
+        font-size: 20px;
+      }
+    }
+
+    .announcements-swiper-button-next {
+      margin-right: 40px;
+    }
+
+    .announcements-swiper-button-prev {
+      margin-left: 40px;
+    }
+  }
+}

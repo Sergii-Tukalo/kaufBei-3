@@ -1,0 +1,165 @@
+@import './menu.scss';
+
+.search {
+  @include respond-above(md) {
+    width: auto;
+    padding-top: 0;
+    display: none;
+  }
+
+  width: 100%;
+  padding-top: 10px;
+
+  &__form {
+    position: relative;
+  }
+
+  &__control {
+    border: 2px solid grey;
+    appearance: none;
+    background: white;
+    cursor: text;
+    height: 30px;
+    line-height: 22px;
+    padding: 0 68px 0 16px;
+    vertical-align: baseline;
+    width: 100%;
+    transition: border-color 0.2s;
+    outline: 0;
+    position: relative;
+
+    @include respond-above(sm) {
+      height: 40px;
+    }
+
+    &:focus {
+      border-color: #ff9797;
+      outline: 0;
+
+      +button svg {
+        color: black;
+      }
+    }
+
+    &:disabled {
+      color: gray;
+      border-color: gray;
+      pointer-events: none;
+      cursor: default;
+
+      +button svg {
+        color: gray;
+      }
+    }
+
+    &::placeholder {
+      color: gray;
+    }
+  }
+
+  &__button {
+    align-items: center;
+    appearance: none;
+    background: none;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: top;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    appearance: none;
+    border: 0;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:focus svg {
+      color: black;
+    }
+
+    svg {
+      color: gray;
+    }
+  }
+}
+
+.search-box {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+
+  @include respond-above(md) {
+    display: block;
+  }
+}
+
+.input-search {
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  padding-right: 40px;
+  color: black;
+}
+
+.input-search::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  color: #606060;
+  background-color: transparent;
+  pointer-events: painted;
+
+  &:hover {
+    color: #ff9797;
+  }
+}
+
+.btn-search:focus~.input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}

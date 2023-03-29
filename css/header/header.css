@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 100px;
+}
+.header__user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.header__user svg {
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=header.css.map */

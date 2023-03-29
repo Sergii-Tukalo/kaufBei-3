@@ -1,0 +1,144 @@
+.product__img {
+  flex: 7;
+  padding: 20px;
+}
+.product__details {
+  flex: 5;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.product__name {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+.product .open-review-tab .rating-star-filled {
+  color: #FFC94F;
+  text-transform: uppercase;
+}
+.product .open-review-tab .rating-star-empty {
+  color: #817e7e;
+}
+.product .price--oldPrice {
+  margin-right: 8px;
+}
+.product .oldPrice-wrap {
+  text-decoration: line-through;
+}
+.product .count--review {
+  font-size: 12px;
+  color: #817e7e;
+}
+.product .details--price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.product .text-danger {
+  color: #f62f5e;
+}
+.product .pricebox {
+  display: flex;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.product-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.product-quantity__title {
+  font-size: 18px;
+}
+.product-quantity__counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+.product-quantity__btn {
+  border: none;
+}
+.product-quantity__btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: white;
+}
+.product-quantity__number {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.product-quantity__number::-webkit-outer-spin-button, .product-quantity__number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product-quantity__number[type=number] {
+  -moz-appearance: textfield;
+}
+.product .tobasketFunction {
+  margin-bottom: 16px;
+}
+.product__amazon-pay {
+  background-color: #f9d875;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  height: 42px;
+  margin-bottom: 16px;
+}
+.product__amazon-pay::before {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../../images/amazon-pay.svg) center no-repeat;
+  background-size: contain;
+  margin-top: 4px;
+}
+.product__amazon-pay:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #f62f5e;
+  box-shadow: inset 0 0 0 2px black;
+}
+.product__versandkosten-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3c3c3c;
+}
+.product__versandkosten-link {
+  color: #3c3c3c;
+  text-decoration: underline;
+}
+.product__versandkosten-link:hover {
+  color: #f62f5e;
+}
+.product__paypal {
+  color: #3c3c3c;
+  margin-bottom: 16px;
+}
+.product__paypal-img {
+  width: 60px;
+  transform: translateY(30%);
+}/*# sourceMappingURL=product.css.map */

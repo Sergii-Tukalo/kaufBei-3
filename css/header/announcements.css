@@ -1,0 +1,24 @@
+.announcements .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 81, 81);
+  background: linear-gradient(0deg, rgb(245, 81, 81) 0%, rgb(255, 255, 255) 0%, rgb(237, 135, 135) 100%);
+  padding: 15px 0;
+}
+.announcements .mySwiper-announcements .announcements-swiper-button-next,
+.announcements .mySwiper-announcements .announcements-swiper-button-prev {
+  color: black;
+  height: 20px;
+  transform: translateY(10px);
+}
+.announcements .mySwiper-announcements .announcements-swiper-button-next::after,
+.announcements .mySwiper-announcements .announcements-swiper-button-prev::after {
+  font-size: 20px;
+}
+.announcements .mySwiper-announcements .announcements-swiper-button-next {
+  margin-right: 40px;
+}
+.announcements .mySwiper-announcements .announcements-swiper-button-prev {
+  margin-left: 40px;
+}/*# sourceMappingURL=announcements.css.map */

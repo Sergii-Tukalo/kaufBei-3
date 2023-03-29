@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/mini-logo.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>SCOTEX</title>
+  </head>
+  <body>
+    <header class="header__wrapper">
+      <div class="announcements">
+        <div class="swiper mySwiper-announcements">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              Here can be your announcements, some sales, actions etc
+            </div>
+            <div class="swiper-slide">
+              Here can be your announcements, some sales, actions etc
+            </div>
+            <div class="swiper-slide">
+              Here can be your announcements, some sales, actions etc
+            </div>
+          </div>
+          <div
+            class="announcements-swiper-button-next swiper-button-next"
+          ></div>
+          <div
+            class="announcements-swiper-button-prev swiper-button-prev"
+          ></div>
+        </div>
+      </div>
+      <div class="header container">
+        <div class="header__burger">
+          <svg
+            class="ham hamRotate ham8"
+            viewBox="0 0 100 100"
+            width="50"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+            />
+            <path
+              class="line middle"
+              d="m 30,50 h 40"
+            />
+            <path
+              class="line bottom"
+              d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+            />
+          </svg>
+        </div>
+        <a
+          class="header__logo"
+          href="https://www.scotex.de/en/Spare-parts/"
+        >
+          <svg
+            viewBox="0 0 296 58"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M42.56 45.1311V45.8811H46.87V57.3211H47.75V45.8811H52.03V45.1311H42.56ZM32.08 57.3211H32.88C32.9132 57.3225 32.9464 57.317 32.9774 57.305C33.0083 57.2929 33.0365 57.2746 33.06 57.2511C33.1142 57.2087 33.1614 57.1581 33.2 57.1011L36.97 51.7411C37.0278 51.6675 37.0688 51.5822 37.09 51.4911L40.93 57.1011C40.9637 57.1558 41.0041 57.2061 41.05 57.2511C41.0747 57.2759 41.1044 57.295 41.1373 57.3071C41.1701 57.3192 41.2051 57.324 41.24 57.3211H42.11L37.72 51.0211L41.93 45.1311H41.09C41.0622 45.1301 41.0345 45.1349 41.0087 45.1452C40.9828 45.1556 40.9595 45.1712 40.94 45.1911L40.83 45.3211L37.26 50.3811L37.18 50.5111V50.6511L33.48 45.3111C33.4518 45.2671 33.4182 45.2268 33.38 45.1911C33.3557 45.1694 33.3271 45.1528 33.2962 45.1425C33.2652 45.1322 33.2325 45.1283 33.2 45.1311H32.33L36.53 51.0711L32.08 57.3211ZM30.85 46.2211C30.4608 45.8243 29.9946 45.5112 29.48 45.3011C28.9339 45.0946 28.3538 44.9928 27.77 45.0011C27.2578 44.9891 26.7483 45.0775 26.27 45.2611C25.8568 45.4175 25.4792 45.6556 25.16 45.9611C24.8637 46.2413 24.6317 46.5825 24.48 46.9611C24.3245 47.3349 24.2463 47.7362 24.25 48.1411C24.231 48.589 24.3201 49.0349 24.51 49.4411C24.6744 49.7775 24.9098 50.0744 25.2 50.3111C25.5022 50.5538 25.8393 50.7493 26.2 50.8911C26.57 51.0411 26.94 51.1711 27.33 51.2911L28.45 51.6611C28.8016 51.7756 29.1375 51.9335 29.45 52.1311C29.7306 52.3118 29.9693 52.5505 30.15 52.8311C30.3333 53.1535 30.4233 53.5205 30.41 53.8911C30.4122 54.2744 30.3409 54.6546 30.2 55.0111C30.062 55.3481 29.858 55.6541 29.6 55.9111C29.3107 56.1767 28.9705 56.3809 28.6 56.5111C28.1864 56.6603 27.7496 56.7348 27.31 56.7311C26.9933 56.7338 26.6775 56.6969 26.37 56.6211C26.1162 56.5605 25.8685 56.4768 25.63 56.3711C25.433 56.2797 25.2454 56.1692 25.07 56.0411C24.91 55.9211 24.77 55.8111 24.66 55.7111L24.37 55.4611C24.3165 55.4061 24.246 55.3709 24.17 55.3611C24.1226 55.3622 24.0761 55.3746 24.0344 55.3972C23.9926 55.4198 23.9569 55.452 23.93 55.4911L23.69 55.8611C24.1101 56.3523 24.6277 56.7507 25.21 57.0311C25.8603 57.3347 26.5726 57.482 27.29 57.4611C27.8534 57.4695 28.4133 57.3711 28.94 57.1711C29.3965 56.9942 29.8118 56.7253 30.16 56.3811C30.4941 56.0499 30.7532 55.6509 30.92 55.2111C31.1007 54.7491 31.1923 54.2571 31.19 53.7611C31.2042 53.3285 31.1115 52.8992 30.92 52.5111C30.7383 52.1941 30.4891 51.921 30.19 51.7111C29.8864 51.4731 29.5494 51.2811 29.19 51.1411C28.83 50.9911 28.45 50.8511 28.06 50.7211L26.94 50.3411C26.588 50.2232 26.2521 50.062 25.94 49.8611C25.6627 49.6838 25.4273 49.4484 25.25 49.1711C25.064 48.8714 24.9701 48.5237 24.98 48.1711C24.9787 47.8588 25.0399 47.5494 25.16 47.2611C25.2801 46.9751 25.457 46.7166 25.68 46.5011C25.926 46.2754 26.2151 46.1019 26.53 45.9911C26.9047 45.8552 27.3016 45.7908 27.7 45.8011C28.0765 45.7899 28.452 45.844 28.81 45.9611C29.0765 46.0511 29.3316 46.1719 29.57 46.3211C29.7367 46.4283 29.897 46.5452 30.05 46.6711C30.1241 46.7578 30.2271 46.8147 30.34 46.8311C30.3863 46.8314 30.4316 46.8184 30.4707 46.7936C30.5097 46.7687 30.5407 46.7331 30.56 46.6911L30.85 46.2211ZM19.4 45.1311H18.62C18.5487 45.1296 18.4787 45.1506 18.42 45.1911C18.3692 45.2354 18.3283 45.2899 18.3 45.3511L14.82 50.9511C14.74 51.0811 14.67 51.2111 14.61 51.3311C14.55 51.4511 14.5 51.5811 14.45 51.7011C14.4087 51.5744 14.3585 51.4508 14.3 51.3311C14.24 51.2111 14.17 51.0811 14.09 50.9511L10.61 45.3511C10.5678 45.2909 10.5173 45.2371 10.46 45.1911C10.4057 45.1493 10.3384 45.128 10.27 45.1311H9.5L14.01 52.2911V57.2911H14.89V52.2911L19.4 45.1311ZM0.940002 45.8311H3.56001C4.41131 45.7643 5.26027 45.9863 5.97 46.4611C6.23536 46.6916 6.44383 46.9803 6.57914 47.3047C6.71445 47.6291 6.77292 47.9803 6.75 48.3311C6.75028 48.6465 6.68914 48.959 6.57 49.2511C6.44558 49.5589 6.25029 49.833 6 50.0511C5.71207 50.3115 5.37081 50.506 5 50.6211C4.53573 50.7746 4.04895 50.849 3.56001 50.8411H0.940002V45.8311ZM4 51.4811C4.4622 51.4765 4.92294 51.5337 5.37 51.6511C5.73172 51.7536 6.07095 51.9232 6.37 52.1511C6.63801 52.3583 6.85377 52.6255 7 52.9311C7.14563 53.2443 7.22073 53.5857 7.22 53.9311C7.24927 54.3053 7.19033 54.6813 7.04791 55.0286C6.9055 55.376 6.68358 55.6851 6.4 55.9311C5.69717 56.4414 4.83613 56.6859 3.97 56.6211H0.970001V51.4911L4 51.4811ZM4 57.3211C4.58801 57.3279 5.17396 57.2504 5.74001 57.0911C6.2106 56.9616 6.64964 56.7369 7.03 56.4311C7.38004 56.1532 7.65505 55.7923 7.83 55.3811C8.02326 54.9436 8.11881 54.4692 8.11 53.9911C8.13053 53.6213 8.07152 53.2515 7.93697 52.9065C7.80241 52.5615 7.59544 52.2493 7.33 51.9911C6.71074 51.4512 5.93786 51.119 5.12 51.0411C5.47341 50.9499 5.81068 50.8048 6.12 50.6111C6.41398 50.4347 6.6774 50.2118 6.9 49.9511C7.32216 49.4615 7.55615 48.8375 7.56001 48.1911C7.56909 47.745 7.4839 47.302 7.31001 46.8911C7.15309 46.4998 6.89827 46.1555 6.57 45.8911C6.19493 45.6057 5.76652 45.3983 5.31001 45.2811C4.71867 45.131 4.10998 45.0604 3.5 45.0711H0V57.2611L4 57.3211Z"
+              fill="black"
+            />
+            <path
+              d="M31.2104 4.98444C28.1456 3.98934 24.8593 3.89559 21.7427 4.71433C18.6261 5.53306 15.8102 7.22983 13.6301 9.60277C11.45 11.9757 9.99743 14.925 9.44516 18.0997C8.89289 21.2744 9.2642 24.5409 10.5149 27.5107C11.7656 30.4804 13.843 33.0284 16.5001 34.8515C19.1571 36.6746 22.282 37.6962 25.5029 37.7945C28.7237 37.8929 31.9051 37.064 34.6684 35.4064C37.4318 33.7488 39.6609 31.3323 41.0904 28.4444"
+              stroke="#FF0000"
+              stroke-width="0.68"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M42.7004 32.0044C44.8232 28.7828 45.9689 25.0158 45.9994 21.1577C46.0298 17.2997 44.9437 13.5151 42.8719 10.2604C40.8001 7.00561 37.8311 4.41957 34.3228 2.81402C30.8146 1.20846 26.9168 0.651911 23.0994 1.21147C19.282 1.77103 15.7079 3.42281 12.808 5.96768C9.90811 8.51255 7.8062 11.8419 6.75567 15.5543C5.70514 19.2667 5.75082 23.2038 6.88722 26.8908C8.02362 30.5779 10.2022 33.8575 13.1604 36.3344"
+              stroke="#FF0000"
+              stroke-width="0.68"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14.6104 13.4344C13.1425 15.6476 12.3506 18.2402 12.3312 20.8959C12.3119 23.5515 13.0659 26.1554 14.5014 28.3898C15.9368 30.6242 17.9916 32.3924 20.415 33.4788C22.8383 34.5651 25.5255 34.9226 28.1486 34.5076C30.7717 34.0926 33.2173 32.923 35.187 31.1416C37.1567 29.3603 38.5652 27.0441 39.2408 24.4757C39.9164 21.9074 39.8298 19.1979 38.9916 16.6779C38.1534 14.1579 36.5998 11.9364 34.5204 10.2844"
+              stroke="#FF0000"
+              stroke-width="0.68"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M26.0104 31.0044C24.1541 31.0052 22.3448 30.4202 20.8403 29.3328C19.3358 28.2455 18.2127 26.7111 17.631 24.9483C17.0493 23.1854 17.0386 21.284 17.6005 19.5147C18.1624 17.7455 19.2682 16.1986 20.7604 15.0944C20.8784 15.0098 21.012 14.9494 21.1534 14.9167C21.2949 14.8839 21.4414 14.8795 21.5846 14.9037C21.7277 14.9279 21.8647 14.9801 21.9875 15.0575C22.1104 15.1348 22.2167 15.2358 22.3004 15.3544C22.4703 15.594 22.5392 15.8907 22.4925 16.1806C22.4457 16.4705 22.287 16.7304 22.0504 16.9044C20.9415 17.7396 20.1237 18.9026 19.713 20.2286C19.3022 21.5547 19.3194 22.9764 19.762 24.2921C20.2047 25.6078 21.0503 26.7508 22.179 27.5589C23.3077 28.3671 24.6622 28.7993 26.0504 28.7944C27.4386 28.7993 28.7931 28.3671 29.9218 27.5589C31.0505 26.7508 31.8962 25.6078 32.3388 24.2921C32.7814 22.9764 32.7986 21.5547 32.3878 20.2286C31.9771 18.9026 31.1593 17.7396 30.0504 16.9044C29.8123 16.7319 29.6515 16.4727 29.6029 16.1827C29.5542 15.8927 29.6216 15.5952 29.7904 15.3544C29.8741 15.2358 29.9804 15.1348 30.1033 15.0575C30.2261 14.9801 30.3631 14.9279 30.5063 14.9037C30.6494 14.8795 30.796 14.8839 30.9374 14.9167C31.0788 14.9494 31.2124 15.0098 31.3304 15.0944C32.8233 16.1991 33.9294 17.7469 34.4911 19.5171C35.0527 21.2874 35.0412 23.1897 34.4583 24.953C33.8753 26.7163 32.7506 28.2507 31.2444 29.3373C29.7383 30.4239 27.9276 31.0073 26.0704 31.0044H26.0104Z"
+              fill="#FF0000"
+            />
+            <path
+              d="M27.1004 11.9744C27.0746 11.7072 26.9502 11.4592 26.7515 11.2787C26.5527 11.0982 26.2939 10.9982 26.0254 10.9982C25.757 10.9982 25.4981 11.0982 25.2994 11.2787C25.1006 11.4592 24.9762 11.7072 24.9504 11.9744V18.7344C24.9762 19.0016 25.1006 19.2497 25.2994 19.4302C25.4981 19.6106 25.757 19.7106 26.0254 19.7106C26.2939 19.7106 26.5527 19.6106 26.7515 19.4302C26.9502 19.2497 27.0746 19.0016 27.1004 18.7344V11.9744Z"
+              fill="#FF0000"
+            />
+            <path
+              d="M290.702 5.87595H291.191C291.769 5.87595 292.188 5.67561 292.188 5.19479C292.188 4.71396 291.889 4.49358 291.191 4.49358C290.999 4.4756 290.805 4.4756 290.613 4.49358L290.702 5.87595ZM290.702 8.50044H289.706V3.87252C290.278 3.76678 290.859 3.71979 291.44 3.73228C291.984 3.68614 292.529 3.80476 293.005 4.07287C293.148 4.19652 293.261 4.35061 293.337 4.52391C293.413 4.6972 293.449 4.88534 293.444 5.07458C293.427 5.33057 293.328 5.57405 293.16 5.76766C292.993 5.96128 292.767 6.09433 292.517 6.14642V6.20652C292.743 6.29879 292.94 6.45263 293.084 6.65079C293.228 6.84895 293.315 7.0836 293.334 7.32844C293.38 7.73235 293.495 8.12534 293.673 8.49043H292.457C292.286 8.13135 292.166 7.7505 292.098 7.35849C292.018 6.84762 291.749 6.62724 291.171 6.62724H290.673L290.702 8.50044ZM287.891 6.10635C287.873 6.58332 287.95 7.05921 288.118 7.50564C288.286 7.95207 288.542 8.3599 288.87 8.70484C289.199 9.04977 289.593 9.32474 290.029 9.51335C290.465 9.70196 290.935 9.80036 291.41 9.80268C292.354 9.75333 293.243 9.34183 293.893 8.65311C294.544 7.96439 294.907 7.05097 294.907 6.10134C294.907 5.1517 294.544 4.23829 293.893 3.54957C293.243 2.86084 292.354 2.44935 291.41 2.4C290.937 2.40768 290.47 2.5102 290.036 2.70156C289.603 2.89293 289.212 3.16929 288.886 3.51445C288.56 3.85961 288.306 4.26664 288.139 4.7117C287.971 5.15676 287.894 5.6309 287.911 6.10635M296.025 6.10635C296.031 7.02971 295.764 7.93402 295.257 8.70439C294.751 9.47477 294.028 10.0765 293.18 10.433C292.333 10.7896 291.399 10.885 290.497 10.707C289.595 10.5291 288.767 10.0858 288.116 9.4336C287.466 8.78137 287.023 7.94959 286.844 7.04389C286.665 6.1382 286.758 5.19948 287.111 4.34694C287.464 3.49441 288.061 2.76654 288.826 2.2558C289.592 1.74505 290.491 1.47447 291.41 1.47842C292.015 1.47576 292.615 1.59372 293.174 1.82548C293.734 2.05723 294.242 2.39818 294.669 2.82859C295.096 3.259 295.435 3.77031 295.664 4.33294C295.893 4.89556 296.009 5.49833 296.006 6.10635"
+              fill="black"
+            />
+            <path
+              d="M202.265 3.37167C202.275 3.10889 202.23 2.84684 202.133 2.60274C202.036 2.35865 201.888 2.13803 201.7 1.95541C201.511 1.7728 201.287 1.63231 201.04 1.54319C200.794 1.45407 200.532 1.41834 200.271 1.43835H176.696C176.186 1.43835 175.697 1.64204 175.336 2.00461C174.975 2.36717 174.772 2.85892 174.772 3.37167C174.772 3.88441 174.975 4.37616 175.336 4.73872C175.697 5.10129 176.186 5.30498 176.696 5.30498H182.308C184.88 5.30498 186.355 6.93777 186.355 9.78264V54.3389C186.355 55.7614 187.093 56.5728 188.349 56.5728H188.628C189.914 56.5728 190.622 55.7614 190.622 54.3389V9.78264C190.622 6.93777 192.087 5.30498 194.669 5.30498H200.181C200.443 5.32663 200.706 5.29203 200.952 5.2035C201.199 5.11498 201.425 4.97455 201.613 4.79159C201.802 4.60863 201.95 4.38734 202.047 4.14249C202.143 3.89764 202.187 3.63486 202.175 3.37167"
+              fill="black"
+            />
+            <path
+              d="M232.279 28.9956C232.3 28.7448 232.268 28.4924 232.185 28.2549C232.103 28.0174 231.971 27.8002 231.798 27.6176C231.626 27.4349 231.417 27.291 231.186 27.1953C230.954 27.0996 230.705 27.0543 230.455 27.0622H222.48C220.108 27.0622 218.752 25.4395 218.752 22.5946V17.4057C218.752 11.6058 221.972 5.91603 227.474 5.91603H237.054C239.207 5.91603 239.207 1.44838 237.054 1.44838H227.464C219.839 1.44838 214.755 8.97126 214.755 17.4057V40.6154C214.755 49.0499 219.839 56.5728 227.464 56.5728H237.044C239.197 56.5728 239.197 52.1051 237.044 52.1051H227.464C221.962 52.1051 218.742 46.4154 218.742 40.6154V35.4266C218.742 32.5817 220.098 30.9589 222.47 30.9589H230.445C230.687 30.9728 230.929 30.9362 231.156 30.8513C231.384 30.7664 231.591 30.6351 231.765 30.4657C231.939 30.2963 232.077 30.0924 232.168 29.867C232.26 29.6415 232.305 29.3994 232.299 29.1558V28.9956"
+              fill="black"
+            />
+            <path
+              d="M159.033 41.1664C159.033 46.756 155.653 52.2454 149.892 52.2454C144.13 52.2454 140.741 46.766 140.741 41.1664V16.8447C140.741 11.2552 144.12 5.75575 149.892 5.75575C155.663 5.75575 159.033 11.2552 159.033 16.8447V41.1664ZM163.209 41.1664V16.8447C163.209 8.70079 157.876 1.43835 149.892 1.43835C141.907 1.43835 136.574 8.70079 136.574 16.8447V41.1664C136.574 49.3103 141.897 56.5628 149.892 56.5628C157.886 56.5628 163.209 49.3103 163.209 41.1664Z"
+              fill="black"
+            />
+            <path
+              d="M123.107 49.3203C123.359 48.8234 123.436 48.255 123.323 47.7087C123.211 47.1625 122.917 46.671 122.489 46.3152C122.272 46.1546 122.022 46.0442 121.757 45.9919C121.492 45.9396 121.219 45.9467 120.957 46.0127C120.695 46.0788 120.451 46.2021 120.242 46.3738C120.033 46.5456 119.864 46.7616 119.748 47.0064C118.323 49.2602 116.11 52.2954 111.684 52.2954C105.922 52.2954 102.553 46.806 102.553 41.2165V16.8447C102.553 11.2552 105.922 5.75575 111.684 5.75575C116.11 5.75575 118.243 8.7609 119.569 11.0548C119.692 11.2942 119.866 11.5033 120.079 11.667C120.292 11.8306 120.538 11.9448 120.8 12.0013C121.062 12.0579 121.334 12.0553 121.595 11.9938C121.856 11.9324 122.1 11.8135 122.31 11.6458C122.737 11.2903 123.032 10.7995 123.147 10.2536C123.261 9.7077 123.187 9.13909 122.938 8.64069C121.939 6.49078 120.349 4.6735 118.354 3.40412C116.359 2.13474 114.045 1.46646 111.684 1.47843C103.709 1.47843 98.3862 8.74087 98.3862 16.8848V41.1664C98.3862 49.3103 103.709 56.5627 111.684 56.5627C114.08 56.5847 116.432 55.9123 118.458 54.6261C120.484 53.3399 122.098 51.4944 123.107 49.3103"
+              fill="black"
+            />
+            <path
+              d="M85.916 40.4852C85.916 31.5599 79.2672 25.9703 71.6316 24.6881C71.6316 24.6881 63.3879 22.6847 63.3879 14.671C63.3879 12.0164 65.0725 5.65553 71.7213 5.65553C72.8292 5.64763 73.9277 5.85946 74.954 6.27888C75.9803 6.69829 76.9142 7.31705 77.7022 8.09971C78.8585 9.10143 79.9251 9.10143 80.6926 8.30006C81.0667 7.88993 81.2742 7.35381 81.2742 6.79748C81.2742 6.24115 81.0667 5.70503 80.6926 5.29491C79.524 4.09173 78.1291 3.13388 76.589 2.47698C75.049 1.82009 73.3943 1.47724 71.7213 1.46835C63.5673 1.4383 59.3906 8.70074 59.3906 14.691C59.3906 21.7531 63.4776 27.8335 71.7213 28.9154C71.7213 28.9154 81.6895 31.1692 81.7493 40.4852C81.839 45.1932 78.2903 52.2553 71.7213 52.2553C67.6443 52.2553 64.3647 49.3203 62.411 46.3752C62.2905 46.1426 62.1187 45.9407 61.9088 45.7849C61.6989 45.629 61.4563 45.5234 61.1996 45.4761C60.9429 45.4287 60.6789 45.4409 60.4275 45.5117C60.1762 45.5824 59.9443 45.7099 59.7495 45.8844C59.3423 46.2597 59.0823 46.769 59.0165 47.3202C58.9507 47.8715 59.0834 48.4281 59.3906 48.8896C61.5238 52.7161 65.8699 56.5427 71.7213 56.5427C80.0646 56.5427 85.916 48.5289 85.916 40.4551"
+              fill="black"
+            />
+            <path
+              d="M266.141 37.0093C266.958 37.0093 267.776 37.8006 268.414 39.193L275.461 54.389C276.019 55.5911 276.847 56.5728 277.963 56.5728C279.638 56.5728 280.465 55.4809 279.727 53.6277L270.547 32.0808C270.187 31.2374 269.987 30.3336 269.959 29.4163V28.6049C269.987 27.6876 270.187 26.7838 270.547 25.9403L279.727 4.39342C280.465 2.54024 279.638 1.43835 277.963 1.43835C276.847 1.43835 276.019 2.44007 275.461 3.63211L268.414 18.8281C267.776 20.2205 266.958 20.9818 266.141 21.0119H266.041C265.224 21.0119 264.406 20.2205 263.778 18.8281L256.721 3.63211C256.173 2.43005 255.335 1.43835 254.219 1.43835C252.554 1.43835 251.717 2.54024 252.454 4.39342L261.645 25.9403C262 26.7853 262.2 27.6882 262.233 28.6049V29.4163C262.2 30.3329 262 31.2358 261.645 32.0808L252.454 53.6277C251.717 55.4809 252.554 56.5728 254.219 56.5728C255.335 56.5728 256.212 55.571 256.721 54.389L263.778 39.163C264.406 37.7706 265.224 37.0093 266.041 36.9792H266.141"
+              fill="black"
+            />
+            <path
+              d="M271.434 12.307L268.443 18.8281C267.805 20.2205 266.988 20.9818 266.171 21.0119H266.071C265.254 21.0119 264.436 20.2205 263.808 18.8281L260.818 12.307L257.887 16.9649L261.715 25.9804C262.069 26.8292 262.268 27.7352 262.303 28.655V29.4663C262.269 30.383 262.07 31.2859 261.715 32.1309L257.887 41.0963L260.818 45.7542L263.808 39.2431C264.436 37.8507 265.254 37.0794 266.071 37.0493H266.171C266.988 37.0493 267.805 37.8507 268.443 39.2431L271.434 45.7542L274.365 41.0963L270.547 32.1309C270.187 31.2875 269.987 30.3837 269.959 29.4663V28.655C269.988 27.7345 270.188 26.8277 270.547 25.9804L274.365 16.9649"
+              fill="#FF0000"
+            />
+          </svg>
+        </a>
+        <div class="header__user">
+          <div class="header__user-language">
+            Eng
+            <svg
+              focusable="false"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              role="img"
+            >
+              <title id="choose-language-26870343">Choose language</title>
+              <path
+                d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12h.001c6.624-.008 11.991-5.376 11.999-12zm-1.501-.024c-1.24-.38-2.502-.67-3.775-.904-.15-3.641-1.174-6.775-2.714-8.77 3.798 1.574 6.473 5.31 6.489 9.674zM11.25 1.626v8.89a33.51 33.51 0 0 0-4.462.295c.277-4.66 2.15-8.49 4.462-9.186zm0 10.389v10.36c-2.453-.74-4.41-5.01-4.492-10.053a32.06 32.06 0 0 1 4.492-.307zm1.5 10.36v-10.36c1.505.003 3.006.093 4.492.307-.082 5.042-2.04 9.314-4.492 10.053zm0-11.86v-8.89c2.311.697 4.185 4.527 4.462 9.186a33.51 33.51 0 0 0-4.462-.295zm-4.756-8.22c-1.542 1.996-2.568 5.133-2.718 8.777a33.497 33.497 0 0 0-3.775.904c.01-4.37 2.69-8.109 6.493-9.68zm-6.378 11.18c.046-.007.093-.004.139-.02 1.153-.361 2.328-.631 3.511-.859.1 3.785 1.14 7.053 2.728 9.109a10.501 10.501 0 0 1-6.378-8.23zm14.39 8.23c1.588-2.056 2.627-5.324 2.728-9.109 1.183.228 2.358.498 3.511.859.045.016.092.017.139.024a10.501 10.501 0 0 1-6.378 8.226z"
+              ></path>
+            </svg>
+          </div>
+          <div class="header__user-signin">
+            <svg
+              focusable="false"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              role="img"
+            >
+              <title id="login-26870344">Login</title>
+              <path
+                d="M21.645 22.866a28.717 28.717 0 0 0-6.46-7.817c-2.322-1.892-4.048-1.892-6.37 0a28.74 28.74 0 0 0-6.46 7.817.75.75 0 0 0 1.294.76 27.264 27.264 0 0 1 6.113-7.413A3.98 3.98 0 0 1 12 15.125a3.81 3.81 0 0 1 2.236 1.088 27.252 27.252 0 0 1 6.115 7.412.75.75 0 1 0 1.294-.76zM12 12.002A6.01 6.01 0 0 0 18.003 6 6.003 6.003 0 1 0 12 12.002zm0-10.505a4.502 4.502 0 1 1 0 9.005 4.502 4.502 0 0 1 0-9.005z"
+              ></path>
+            </svg>
+            <div class="header__user-menu"></div>
+          </div>
+          <div class="header__user-wishlist">
+            <svg
+              focusable="false"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              role="img"
+            >
+              <title id="wish-list-26870345">Wish list</title>
+              <path
+                d="M17.488 1.11h-.146a6.552 6.552 0 0 0-5.35 2.81A6.57 6.57 0 0 0 6.62 1.116 6.406 6.406 0 0 0 .09 7.428c0 7.672 11.028 15.028 11.497 15.338a.745.745 0 0 0 .826 0c.47-.31 11.496-7.666 11.496-15.351a6.432 6.432 0 0 0-6.42-6.306zM12 21.228C10.018 19.83 1.59 13.525 1.59 7.442c.05-2.68 2.246-4.826 4.934-4.826h.088c2.058-.005 3.93 1.251 4.684 3.155.226.572 1.168.572 1.394 0 .755-1.907 2.677-3.17 4.69-3.16h.02c2.7-.069 4.96 2.118 5.01 4.817 0 6.089-8.429 12.401-10.41 13.8z"
+              ></path>
+            </svg>
+          </div>
+          <div class="header__user-cart">
+            <svg
+              focusable="false"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              role="img"
+            >
+              <title id="your-bag-26870346">Your bag</title>
+              <path
+                d="M20.677 13.654a5.23 5.23 0 0 0 1.073-3.194c-.01-2.632-1.968-4.78-4.5-5.137V5.25a5.25 5.25 0 0 0-10.5 0v.059a5.224 5.224 0 0 0-2.444 1.014 5.23 5.23 0 0 0-.983 7.33A5.623 5.623 0 0 0 6.375 24h11.25a5.623 5.623 0 0 0 3.052-10.346zM12 1.5a3.75 3.75 0 0 1 3.75 3.75h-7.5A3.75 3.75 0 0 1 12 1.5zm5.625 21H6.375a4.122 4.122 0 0 1-1.554-7.942.75.75 0 0 0 .214-1.256A3.697 3.697 0 0 1 3.75 10.5a3.755 3.755 0 0 1 3-3.674V9a.75.75 0 0 0 1.5 0V6.75h7.5V9a.75.75 0 1 0 1.5 0V6.826a3.755 3.755 0 0 1 3 3.674c0 1.076-.47 2.1-1.285 2.802a.75.75 0 0 0 .213 1.256 4.122 4.122 0 0 1-1.553 7.942z"
+              ></path>
+            </svg>
+          </div>
+          <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Type to Search..."
+            />
+          </div>
+        </div>
+
+        <div class="header__search search">
+          <form
+            class="search__form"
+            role="search"
+            action="#"
+            method="get"
+          >
+            <input
+              class="search__control search-field js-analytics-search-control"
+              type="text"
+              value=""
+              placeholder="Search"
+              role="combobox"
+              aria-describedby="search-assistive-text"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-autocomplete="list"
+              aria-label="Enter Keyword or Item No."
+              autocomplete="off"
+            />
+            <button
+              type="submit"
+              name="search-button"
+              class="search__button"
+              aria-label="Submit search keywords"
+            >
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                focusable="false"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.382 0a8.382 8.382 0 0 1 6.593 13.56l4.732 4.733a1 1 0 0 1-1.32 1.497l-.094-.083-4.733-4.732A8.382 8.382 0 1 1 8.382 0Zm0 2a6.382 6.382 0 1 0 0 12.765A6.382 6.382 0 0 0 8.382 2Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="suggestions-wrapper"
+              data-url="/on/demandware.store/Sites-cricut-ca-Site/en_CA/SearchServices-GetSuggestions?q="
+            ></div>
+            <input
+              type="hidden"
+              value="null"
+              name="lang"
+            />
+          </form>
+        </div>
+        <nav class="navigation">
+          <ul
+            id="navigation"
+            class="navigation__list nav navbar-nav accordion__list"
+          >
+            <li class="navigation__item">
+              <i class="fa-solid fa-house"></i>
+              <a href="https://www.scotex.de/en/home/">Home</a>
+            </li>
+
+            <li class="navigation__item">
+              <i class="fa-regular fa-address-card"></i>
+              <a href="https://www.scotex.de/en/about-us/">about us</a>
+            </li>
+
+            <li class="navigation__item">
+              <i class="fa-solid fa-person-biking"></i>
+              <a href="https://www.scotex.de/en/Scooter-models/">
+                Scooter models
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <i class="fa-solid fa-bicycle"></i>
+              <a href="https://www.scotex.de/en/Children-s-vehicles/">
+                Children's vehicles
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <i class="fa-solid fa-right-left"></i>
+              <a href="https://www.scotex.de/en/used-returns/">
+                used &amp; returns
+              </a>
+            </li>
+            <li
+              class="navigation__item accordion__item navigation__item-dropdown"
+            >
+              <!-- <i class="fa-solid fa-cart-flatbed"></i> -->
+              <input
+                type="checkbox"
+                checked=""
+              />
+              <i></i>
+              <a
+                href="https://www.scotex.de/en/Spare-parts/"
+                class=""
+                data-toggle="dropdown"
+              >
+                <span class="fa-solid fa-cart-flatbed"></span>
+                Spare parts
+              </a>
+
+              <div class="navigation__dropdown accordion__info">
+                <ul class="accordion__info">
+                  <li>
+                    <a href="https://www.scotex.de/en/Spare-parts/Scotex-H10/"
+                      >Scotex H10</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://www.scotex.de/en/Spare-parts/Scotex-H20/"
+                      >Scotex H20</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://www.scotex.de/en/Spare-parts/Scotex-Spike/"
+                      >Scotex Spike</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.scotex.de/en/Spare-parts/scotex-scotex/"
+                      >Scotex Wheely</a
+                    >
+                  </li>
+                </ul>
+                <a
+                  class="navigation__dropdown-img"
+                  href="https://www.scotex.de/en/Spare-parts/"
+                >
+                  <img
+                    src="images/scooter.jpg"
+                    alt="Scooter"
+                  />
+                </a>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <i class="fa-solid fa-gifts"></i>
+              <a href="https://www.scotex.de/en/Accessories/"> Accessories </a>
+            </li>
+            <li class="navigation__item dropdown moreLinks">
+              <i class="fa-solid fa-circle-info"></i>
+              <a class="">More <span class="caret"></span></a>
+              <ul
+                class="dropdown-menu"
+                role="menu"
+              >
+                <li class="">
+                  <a href="https://www.scotex.de/en/Packing-material/">
+                    Packing material
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="product container">
+        <ol
+          id="breadcrumb"
+          class="breadcrumb"
+          itemscope=""
+          itemtype="http://schema.org/BreadcrumbList"
+        >
+          <li
+            class="breadcrumb__item"
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="http://schema.org/ListItem"
+          >
+            <a
+              class="breadcrumb__link"
+              href="/"
+              itemprop="item"
+              ><span itemprop="name">You are here</span></a
+            ><meta
+              itemprop="position"
+              content="1"
+            />
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="http://schema.org/ListItem"
+            class="active breadcrumb__item"
+          >
+            <a
+              class="breadcrumb__link"
+              href="https://www.scotex.de/en/Scooter-models/"
+              title="Elektronik"
+              itemprop="item"
+              ><span itemprop="name">Scooter models</span></a
+            ><meta
+              itemprop="position"
+              content="3"
+            />
+          </li>
+        </ol>
+        <div class="product__img">
+          <div class="swiper-container-wrapper">
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/11.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/12.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/13.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/14.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/15.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/16.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/17.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/18.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/19.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/20.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/21.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('images/22.jpg')"
+                ></div>
+              </div>
+            </div>
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/11.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/12.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/13.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/14.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/15.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/16.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <dsv
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/17.jpg')"
+                  >
+                  </dsv>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/18.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/19.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/20.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/21.jpg')"
+                  ></div>
+                </div>
+                <div
+                  class="img_producto_container swiper-slide"
+                  data-scale="2.0"
+                >
+                  <div
+                    class="dslc-lightbox-image img_producto"
+                    style="background-image: url('images/22.jpg')"
+                  ></div>
+                </div>
+              </div>
+              <div class="product-swiper-button-next swiper-button-next"></div>
+              <div class="product-swiper-button-prev swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+        <div class="product__details">
+          <div
+            data-product-id="c0465be5caddba97266dafc205d267ad"
+            data-product-parentid=""
+            class="information"
+          >
+            <div class="product__name-wrapper">
+              <h1 class="product__name">Scotex H10 eKFV</h1>
+              <img
+                class="product__funding"
+                src="./images/rassrochka-150x150.png"
+                alt="funding"
+              />
+            </div>
+            <div class="product__price-wrapper">
+              <i>item #esch10</i>
+              <div class="pricebox">
+                <div class="oldPrice price--oldPrice">
+                  <span class="oldPrice-wrap">€649,00</span>
+                </div>
+                <label
+                  id="productPrice"
+                  class="price"
+                >
+                  <span class="text-danger">
+                    <span class="hidden">
+                      <span>€449,00</span>
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <!-- <div class="details--price-container">
+              <div class="stars">
+                <form action="#">
+                  <input
+                    value="5"
+                    class="star star-5"
+                    id="star-5"
+                    type="radio"
+                    name="star"
+                  />
+                  <label
+                    class="star star-5"
+                    for="star-5"
+                  ></label>
+                  <input
+                    value="4"
+                    class="star star-4"
+                    id="star-4"
+                    type="radio"
+                    name="star"
+                  />
+                  <label
+                    class="star star-4"
+                    for="star-4"
+                  ></label>
+                  <input
+                    value="3"
+                    class="star star-3"
+                    id="star-3"
+                    type="radio"
+                    name="star"
+                  />
+                  <label
+                    class="star star-3"
+                    for="star-3"
+                  ></label>
+                  <input
+                    value="2"
+                    class="star star-2"
+                    id="star-2"
+                    type="radio"
+                    name="star"
+                  />
+                  <label
+                    class="star star-2"
+                    for="star-2"
+                  ></label>
+                  <input
+                    value="1"
+                    class="star star-1"
+                    id="star-1"
+                    type="radio"
+                    name="star"
+                  />
+                  <label
+                    class="star star-1"
+                    for="star-1"
+                  ></label>
+                </form>
+              </div>
+              <div class="reviews">
+                <div>Reviews</div>
+                <div class="reviews__number">0/0</div>
+              </div>
+            </div> -->
+            <div class="product__frame">
+              <h4 class="product__frame-title">Choose frame:</h4>
+              <div class="product__frame-content">
+                <div class="product__frame-img">
+                  <img
+                    class="product__frame-white"
+                    src="images/31.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="product__frame-img">
+                  <img
+                    class="product__frame-black"
+                    src="images/32.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="product-quantity">
+              <div class="product-quantity__title">Quantity:</div>
+              <div class="product-quantity__counter">
+                <button class="product-quantity__btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <input
+                  class="product-quantity__number"
+                  type="number"
+                  value="1"
+                />
+                <button class="product-quantity__btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              data-stock-flag="2"
+              class="tobasket"
+            >
+              <div class="button-part">
+                <div class="product__add">
+                  <button class="product__add-button">Add to cart</button>
+                  <div class="product__add-like">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="product__pay">
+                  <button class="product__pay-paypal">
+                    <span class="product__pay-paypal-text">Check out with</span>
+                    <i class="fa-brands fa-paypal"></i>
+                  </button>
+                  <a
+                    class="product__pay-amazon"
+                    title="amazon pay"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      width="32px"
+                      height="32px"
+                    >
+                      <path
+                        d="M 8.8710938 8 L 8.6621094 8.0351562 C 8.0081094 8.1171563 7.3775156 8.3618125 6.8535156 8.7578125 C 6.7365156 8.8278125 6.631625 8.921625 6.515625 9.015625 C 6.503625 8.992625 6.4921875 8.9683125 6.4921875 8.9453125 C 6.4681875 8.8163125 6.4565937 8.6778281 6.4335938 8.5488281 C 6.3985937 8.3388281 6.2822656 8.2324219 6.0722656 8.2324219 L 5.5234375 8.2324219 C 5.1854375 8.2324219 5.1269531 8.3038594 5.1269531 8.6308594 L 5.1269531 18.755859 C 5.1389531 18.907859 5.231375 18.988 5.359375 19 L 6.375 19 C 6.515 19 6.5964219 18.907859 6.6074219 18.755859 C 6.6194219 18.708859 6.6191406 18.662234 6.6191406 18.615234 L 6.6191406 15.097656 C 6.6661406 15.144656 6.7016094 15.168406 6.7246094 15.191406 C 7.5766094 15.903406 8.5568594 16.135781 9.6308594 15.925781 C 10.610859 15.727781 11.28675 15.132812 11.71875 14.257812 C 12.05675 13.592813 12.195031 12.916641 12.207031 12.181641 C 12.230031 11.376641 12.160266 10.60175 11.822266 9.84375 C 11.425266 8.91075 10.749375 8.2920312 9.734375 8.0820312 C 9.582375 8.0470312 9.4195781 8.0347187 9.2675781 8.0117188 C 9.1275781 7.9997187 8.9990938 8 8.8710938 8 z M 16.642578 8 C 16.595578 8.012 16.550906 8.0234375 16.503906 8.0234375 C 16.036906 8.0464375 15.580953 8.1047031 15.126953 8.2207031 C 14.834953 8.2907031 14.555391 8.3952813 14.275391 8.4882812 C 14.100391 8.5462812 14.017578 8.6753281 14.017578 8.8613281 C 14.029578 9.0133281 14.017578 9.176125 14.017578 9.328125 C 14.029578 9.561125 14.123703 9.6215 14.345703 9.5625 C 14.718703 9.4695 15.091844 9.3649219 15.464844 9.2949219 C 16.047844 9.1899219 16.643281 9.1426094 17.238281 9.2246094 C 17.553281 9.2826094 17.844969 9.3648125 18.042969 9.6328125 C 18.217969 9.8548125 18.288781 10.134063 18.300781 10.414062 C 18.312781 10.811063 18.3125 11.125484 18.3125 11.521484 C 18.3125 11.544484 18.312781 11.567125 18.300781 11.578125 L 18.242188 11.578125 C 17.740188 11.450125 17.227844 11.380703 16.714844 11.345703 C 16.177844 11.322703 15.641906 11.346203 15.128906 11.533203 C 14.510906 11.743203 14.007797 12.115656 13.716797 12.722656 C 13.494797 13.189656 13.459297 13.680641 13.529297 14.181641 C 13.634297 14.858641 13.961641 15.371266 14.556641 15.697266 C 15.128641 16.012266 15.735234 16.046125 16.365234 15.953125 C 17.088234 15.848125 17.729063 15.545125 18.289062 15.078125 C 18.312062 15.055125 18.336375 15.044484 18.359375 15.021484 C 18.394375 15.208484 18.418125 15.383875 18.453125 15.546875 C 18.476125 15.698875 18.570938 15.790734 18.710938 15.802734 L 19.492188 15.802734 C 19.609188 15.802734 19.714844 15.698312 19.714844 15.570312 C 19.726844 15.535312 19.726562 15.487406 19.726562 15.441406 L 19.726562 10.462891 C 19.723562 10.263891 19.710781 10.053469 19.675781 9.8554688 C 19.582781 9.2374687 19.325625 8.7234844 18.765625 8.3964844 C 18.450625 8.2094844 18.101516 8.1165938 17.728516 8.0585938 C 17.553516 8.0345937 17.389844 8.023 17.214844 8 L 16.642578 8 z M 20.6875 8.0019531 C 20.5705 8.0019531 20.512156 8.1056562 20.535156 8.2226562 C 20.558156 8.3166563 20.593906 8.422625 20.628906 8.515625 C 21.561906 10.825625 22.506172 13.134078 23.451172 15.455078 C 23.533172 15.653078 23.544172 15.817625 23.451172 16.015625 C 23.300172 16.364625 23.170813 16.726172 23.007812 17.076172 C 22.867813 17.391172 22.635156 17.62575 22.285156 17.71875 C 22.052156 17.77775 21.795781 17.800625 21.550781 17.765625 C 21.433781 17.753625 21.316219 17.73075 21.199219 17.71875 C 21.035219 17.70675 20.955359 17.776172 20.943359 17.951172 L 20.943359 18.419922 C 20.955359 18.688922 21.036687 18.804562 21.304688 18.851562 C 21.561687 18.897562 21.829375 18.931359 22.109375 18.943359 C 22.925375 18.954359 23.568281 18.629969 23.988281 17.917969 C 24.163281 17.637969 24.303641 17.345969 24.431641 17.042969 C 25.562641 14.184969 26.682734 11.33875 27.802734 8.46875 C 27.837734 8.38675 27.859094 8.3039375 27.871094 8.2109375 C 27.894094 8.0709375 27.824266 8.0019062 27.697266 8.0039062 L 26.753906 8.0039062 C 26.590906 7.9919063 26.438859 8.0960469 26.380859 8.2480469 C 26.357859 8.3180469 26.333547 8.3753125 26.310547 8.4453125 L 24.642578 13.216797 C 24.525578 13.554797 24.396297 13.904344 24.279297 14.277344 C 24.255297 14.218344 24.244422 14.195156 24.232422 14.160156 C 23.614422 12.457156 23.008625 10.755734 22.390625 9.0527344 C 22.297625 8.7727344 22.192891 8.502375 22.087891 8.234375 C 22.041891 8.105375 21.935203 8.0136719 21.783203 8.0136719 C 21.421203 8.0016719 21.0605 8.0019531 20.6875 8.0019531 z M 8.859375 9.2128906 C 9.571375 9.2708906 10.154031 9.6212187 10.457031 10.449219 C 10.644031 10.962219 10.691406 11.457141 10.691406 11.994141 C 10.691406 12.496141 10.656859 12.939969 10.505859 13.417969 C 10.178859 14.432969 9.4316094 14.829203 8.4746094 14.783203 C 7.7976094 14.748203 7.2264531 14.490187 6.6894531 14.117188 C 6.6314531 14.082187 6.5964219 14.025797 6.6074219 13.966797 L 6.6074219 10.005859 C 6.5964219 9.9358594 6.6314531 9.87875 6.6894531 9.84375 C 7.3424531 9.38875 8.065375 9.1548906 8.859375 9.2128906 z M 16.427734 12.363281 C 16.627484 12.345781 16.828844 12.349547 17.027344 12.373047 C 17.424344 12.408047 17.82175 12.477156 18.21875 12.535156 C 18.30075 12.547156 18.322266 12.582344 18.322266 12.652344 C 18.310266 12.886344 18.322266 13.107797 18.322266 13.341797 C 18.322266 13.574797 18.310547 13.785531 18.310547 14.019531 C 18.322547 14.077531 18.287234 14.123203 18.240234 14.158203 C 17.703234 14.543203 17.120078 14.801094 16.455078 14.871094 C 16.187078 14.894094 15.918109 14.894062 15.662109 14.789062 C 15.370109 14.684062 15.150359 14.438484 15.068359 14.146484 C 14.975359 13.843484 14.975641 13.528609 15.056641 13.224609 C 15.184641 12.827609 15.463891 12.607516 15.837891 12.478516 C 16.030391 12.420016 16.227984 12.380781 16.427734 12.363281 z M 29.041016 20.001953 C 28.107641 20.014953 27.005922 20.224047 26.169922 20.810547 C 25.911922 20.989547 25.957141 21.238078 26.244141 21.205078 C 27.184141 21.092078 29.276391 20.838406 29.650391 21.316406 C 30.025391 21.794406 29.235719 23.766437 28.886719 24.648438 C 28.778719 24.911437 29.007047 25.020312 29.248047 24.820312 C 30.812047 23.510312 31.218438 20.764141 30.898438 20.369141 C 30.737937 20.171641 29.974391 19.988953 29.041016 20.001953 z M 1.2167969 21.001953 C 0.99873437 21.031953 0.9048125 21.308344 1.1328125 21.527344 C 5.0498125 25.201344 10.225656 27 15.972656 27 C 20.071656 27 24.830234 25.662578 28.115234 23.142578 C 28.658234 22.723578 28.195672 22.09575 27.638672 22.34375 C 23.955672 23.96875 19.955453 24.751953 16.314453 24.751953 C 10.918453 24.751953 5.69475 23.625406 1.46875 21.066406 C 1.37625 21.010406 1.2894844 20.991953 1.2167969 21.001953 z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="accordion">
+            <ul class="accordion__list">
+              <li class="accordion__item">
+                <input
+                  type="checkbox"
+                  checked
+                />
+                <i></i>
+                <h2 class="accordion__title">Payment methods</h2>
+                <div class="accordion__info">
+                  <div class="product__payment-methods">
+                    <div class="payment-methods__long">
+                      <img
+                        src="images/Rechnung.png"
+                        alt=""
+                      />
+                      <img
+                        src="images/Nachnahme.png"
+                        alt=""
+                      />
+                      <img
+                        src="images/Vorauskasse.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="payment-methods__short">
+                      <span class="fa-brands fa-cc-mastercard"></span>
+                      <span class="fa-brands fa-cc-visa"></span>
+                      <span class="fa-brands fa-cc-paypal"></span>
+                      <span class="fa-brands fa-cc-apple-pay"></span>
+                      <span class="fa-brands fa-google-pay"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__tabs container">
+        <div class="tabs">
+          <input
+            type="radio"
+            id="tab1"
+            name="tab-control"
+            checked
+          />
+          <input
+            type="radio"
+            id="tab2"
+            name="tab-control"
+          />
+          <input
+            type="radio"
+            id="tab3"
+            name="tab-control"
+          />
+          <ul>
+            <li title="Features">
+              <label
+                for="tab1"
+                role="button"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"
+                  />
+                </svg>
+                <br /><span>Descreption</span></label
+              >
+            </li>
+            <li title="Delivery Contents">
+              <label
+                for="tab2"
+                role="button"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z"
+                  />
+                </svg>
+                <br /><span>Specification</span></label
+              >
+            </li>
+            <li title="Shipping">
+              <label
+                for="tab3"
+                role="button"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z"
+                  />
+                </svg>
+                <br /><span>Manual</span></label
+              >
+            </li>
+          </ul>
+
+          <div class="slider"><div class="indicator"></div></div>
+          <div class="content">
+            <section>
+              <div class="tab-content">
+                <div
+                  id="description"
+                  class="tab-pane active"
+                  itemprop="description"
+                >
+                  <div class="product__tabs-video">
+                    <div class="product__tabs-video-inner">
+                      <iframe
+                        allowfullscreen=""
+                        frameborder="0"
+                        height="315"
+                        src="https://www.youtube.com/embed/eU4LIfsfwaY?rel=0"
+                        width="560"
+                      ></iframe
+                      ><br />
+                      &nbsp;
+                    </div>
+                    <div class="product__tabs-video-inner">
+                      <iframe
+                        allowfullscreen=""
+                        frameborder="0"
+                        height="315"
+                        src="https://www.youtube.com/embed/C8VuUo4MdyE?rel=0"
+                        width="560"
+                      ></iframe>
+                      &nbsp;
+                    </div>
+                  </div>
+                  <div class="product__read-more">
+                    <input
+                      type="checkbox"
+                      class="read-more-state jcf-hidden"
+                      id="following-content"
+                    />
+                    <p class="read-more-wrap">
+                      The SCOTEX H10 is the new star in the electric scooter sky
+                      and of course the whole thing with approval according to
+                      eKFV (small electric vehicle regulation) and thus legally
+                      approved for use in road traffic.
+                    </p>
+                    <!-- read more goes here -->
+                    <p class="read-more-target">
+                      <br />
+                      Based on a stable &amp; torsion-resistant vehicle frame
+                      made of a magnesium alloy, the vehicle weighs a slim 14.8
+                      kg and is therefore also ideal for use in conjunction with
+                      public transport. Even commuters who cover parts of the
+                      journey by car get along well when loading and unloading
+                      from the car due to the low weight.<br />
+                      <br />
+                      The tires of the SCOTEX H10 consist of 8.5 inch pneumatic
+                      tires with tubes which ensure a quiet driving experience
+                      and absorb a lot of vibrations. In addition to a
+                      maintenance-free drum brake at the front, the Escooter has
+                      an electric brake on the rear drive axle. Both brakes in
+                      combination bring the vehicle to a standstill within a few
+                      meters from any speed.<br />
+                      <br />
+                      The maximum speed is eKFV-compliant 20 km/h, which the
+                      electric scooter easily achieves thanks to the brushless
+                      DC hub motor with a maximum motor power of up to 540 W.
+                      The maximum range is up to 30 km. The 36V 7.5 Ah lithium
+                      battery built into the footboard is charged via the
+                      charging socket on the front side of the vehicle frame
+                      with the 2A charger supplied in around 3.5 hours.<br />
+                      <br />
+                      The SCOTEX H10 has an easy-to-read, high-contrast LCD
+                      display on the front of the handlebars, which is easy to
+                      read under all conditions and, in addition to the speed,
+                      also shows the battery level, the current drive level,
+                      daily kilometers and total kilometers.<br />
+                      Of course, the handlebar can also be folded down at the
+                      front and locked in place at the rear of the vehicle so
+                      that the scooter can be carried comfortably on the
+                      handlebar. The H10 has a sturdy side stand at the front
+                      left for parking when it is unfolded. The e-scooter can
+                      easily be protected against theft with a cable lock which
+                      is quickly and easily pulled through the front frame.<br />
+                      <br />
+                      <strong>Attention! </strong>Minimum age 14 years - no
+                      helmet requirement, no driving license requirement.<br />
+                      <br />
+                      Note for customers from Switzerland and Austria: This
+                      scooter model is also within the values ​​prescribed by
+                      the legislator in these two countries, i.e. it may also be
+                      used legally in road traffic there (in this case, no
+                      approval).
+                    </p>
+                    <label
+                      for="following-content"
+                      class="read-more-trigger"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="product__tabs-specification-wrapper">
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >street-legal</span
+                >
+                <span class="product__tabs-specification-value">yes</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Max. speed (in km/h)
+                </span>
+                <span class="product__tabs-specification-value">20</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Max. range (in km - at 22°C with 70 kg payload)
+                </span>
+                <span class="product__tabs-specification-value">30</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Speeds / gears
+                </span>
+                <span class="product__tabs-specification-value"
+                  >6 km/h, 12 km/h & 20 km/h</span
+                >
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Speed limit
+                </span>
+                <span class="product__tabs-specification-value">yes</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Max. motor power (in watts)
+                </span>
+                <span class="product__tabs-specification-value">540</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Rated motor power (in Watt)
+                </span>
+                <span class="product__tabs-specification-value">350</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Type of drive
+                </span>
+                <span class="product__tabs-specification-value"
+                  >brushless DC Hub-motor</span
+                >
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Max. payload (in kg)
+                </span>
+                <span class="product__tabs-specification-value">100</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Length, width, height (in cm)
+                </span>
+                <span class="product__tabs-specification-value"
+                  >108 x 49 x 119</span
+                >
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Length, width, height / folded (in cm)
+                </span>
+                <span class="product__tabs-specification-value"
+                  >108 x 49 x 48
+                </span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Operating voltage (in volts)
+                </span>
+                <span class="product__tabs-specification-value">36</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Battery capacity in Ah
+                </span>
+                <span class="product__tabs-specification-value">7,5</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Battery capacity in Wh
+                </span>
+                <span class="product__tabs-specification-value">270</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Battery type
+                </span>
+                <span class="product__tabs-specification-value">Lithium</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name"
+                  >Battery removable for charging
+                </span>
+                <span class="product__tabs-specification-value">no</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name">Cell type </span>
+                <span class="product__tabs-specification-value">18650</span>
+              </div>
+              <div class="product__tabs-specification">
+                <span class="product__tabs-specification-name">Charger </span>
+                <span class="product__tabs-specification-value">42V 2A </span>
+              </div>
+            </section>
+            <section>
+              <div class="">
+                <img
+                  height="32"
+                  style="vertical-align: middle"
+                  src="https://www.scotex.de//modules/exonn_mediaext/pdf.png"
+                /><a
+                  href="https://www.scotex.de/out/media/SCOTEX_MAH10_V1.1..pdf"
+                  target="_blank"
+                  >Scotex H10</a
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="product__review">
+        <!--   ///////// Dynamic Reviews Section ////// -->
+        <section class="faq_dynamic-main">
+          <div class="container">
+            <div class="listing__faq pt-4 accordion__list">
+              <div class="faq_inner-listing accordion__item">
+                <input
+                  type="checkbox"
+                  checked=""
+                />
+                <i></i>
+                <h2 class="secondary-color py-2 f-24">Add Your Review</h2>
+                <div class="faq_box-wrapper accordion__info">
+                  <div
+                    class="faq_form-box-inner border border-1 border-secondary p-3"
+                  >
+                    <input
+                      type="text"
+                      name="listing_faq-question"
+                      id="review-username"
+                      placeholder="Name"
+                      class="w-100 py-2 form-control rounded-0"
+                      required
+                    />
+                    <div class="input-group">
+                      <textarea
+                        aria-label="With textarea"
+                        rows="3"
+                        cols="50"
+                        id="rewiew_message"
+                        placeholder="Message"
+                        class="form-control mt-3 w-100 rounded-0"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="list_add-faq pt-2">
+                      <div class="details--price-container">
+                        <div class="stars">
+                          <form action="#">
+                            <input
+                              value="5"
+                              class="star star-5"
+                              id="star-5"
+                              type="radio"
+                              name="star"
+                            />
+                            <label
+                              class="star star-5"
+                              for="star-5"
+                            ></label>
+                            <input
+                              value="4"
+                              class="star star-4"
+                              id="star-4"
+                              type="radio"
+                              name="star"
+                            />
+                            <label
+                              class="star star-4"
+                              for="star-4"
+                            ></label>
+                            <input
+                              value="3"
+                              class="star star-3"
+                              id="star-3"
+                              type="radio"
+                              name="star"
+                            />
+                            <label
+                              class="star star-3"
+                              for="star-3"
+                            ></label>
+                            <input
+                              value="2"
+                              class="star star-2"
+                              id="star-2"
+                              type="radio"
+                              name="star"
+                            />
+                            <label
+                              class="star star-2"
+                              for="star-2"
+                            ></label>
+                            <input
+                              value="1"
+                              class="star star-1"
+                              id="star-1"
+                              type="radio"
+                              name="star"
+                            />
+                            <label
+                              class="star star-1"
+                              for="star-1"
+                            ></label>
+                          </form>
+                        </div>
+                        <div class="reviews">
+                          <div>Reviews</div>
+                          <div class="reviews__number">0/0</div>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-dark list_add-review-cta"
+                      >
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-wrapper-faq">
+          <div class="container">
+            <h4 class="main-head text-center">Reviews</h4>
+            <div class="main_reviews-container">
+              <div class="border py-2 my-2 border-dark reviews_inner container">
+                <div
+                  class="accordian-link d-flex align-items-center pointer py-2"
+                >
+                  <i class="fa-solid fa-face-smile fa-2xl"></i>
+                  <h4 class="reveiew_user_name ps-3">David</h4>
+                </div>
+                <p class="review_answer">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                  quas esse odit voluptatem consectetur debitis vero magni
+                  facere. Laudantium quia architecto ratione accusamus ea dicta
+                  incidunt animi recusandae quasi cumque.Lorem ipsum dolor sit
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="also-bought container">
+        <div class="container">
+          <h3>You may also like</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img
+                  src="images/31.jpg"
+                  alt="Product"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="wsk-cp-text">
+                <a
+                  href="https://www.scotex.de/en/Scooter-models/Scotex-H20-eKFV.html"
+                >
+                  <div class="category">
+                    <span>More information</span>
+                  </div>
+                </a>
+                <div class="title-product">
+                  <h3>Scotex H20 eKFV</h3>
+                </div>
+                <div class="description-prod">
+                  <p>
+                    It's easy to see that the Scotex H20 eKFV-approved electric
+                    scooter is based on its somewhat slimmed-down counterpart,
+                    the Scotex H10. The frame construction is a little bigger
+                    and wider, which leads to an overall beefier appearance -
+                    rightly so!
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="wcf-left">
+                    <div class="price-wrapper">
+                      <span class="price-old">849,00€</span>
+                      <span class="price-new">749,00€</span>
+                    </div>
+                  </div>
+                  <div class="wcf-right">
+                    <a
+                      href="#"
+                      class="buy-btn"
+                    >
+                      <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img
+                  src="images/32.jpg"
+                  alt="Product"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="wsk-cp-text">
+                <a href="https://www.scotex.de/en/Scooter-models/NEON.html">
+                  <div class="category">
+                    <span>More information</span>
+                  </div>
+                </a>
+                <div class="title-product">
+                  <h3>NEON</h3>
+                </div>
+                <div class="description-prod">
+                  <p>
+                    Rear disc brake, central display with adjustable design and
+                    integrated speed display, charge status and much more,
+                    discreet ON/OFF button on the left side of the handlebar
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="wcf-left">
+                    <div class="price-wrapper">
+                      <span class="price-old">649,00€</span>
+                      <span class="price-new">449,00€</span>
+                    </div>
+                  </div>
+                  <div class="wcf-right">
+                    <a
+                      href="#"
+                      class="buy-btn"
+                    >
+                      <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img
+                  src="images/33.jpg"
+                  alt="Product"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="wsk-cp-text">
+                <a
+                  href="https://www.scotex.de/en/Children-s-vehicles/Scotex-Wheely.html"
+                >
+                  <div class="category">
+                    <span>More information</span>
+                  </div>
+                </a>
+                <div class="title-product">
+                  <h3>Scotex Wheely</h3>
+                </div>
+                <div class="description-prod">
+                  <p>
+                    The Scotex Wheely is an e-bike design escooter for children.
+                    The frame and tire size is suitable for children from 3
+                    years. Thanks to the height-adjustable saddle, the bike
+                    grows with the child.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="wcf-left">
+                    <div class="price-wrapper">
+                      <span class="price-old">349,00€</span>
+                      <span class="price-new">149,00€</span>
+                    </div>
+                  </div>
+                  <div class="wcf-right">
+                    <a
+                      href="#"
+                      class="buy-btn"
+                    >
+                      <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img">
+                <img
+                  src="images/34.jpg"
+                  alt="Product"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="wsk-cp-text">
+                <a
+                  href="https://www.scotex.de/en/Children-s-vehicles/SCOTEX-Spike.html"
+                >
+                  <div class="category">
+                    <span>More information</span>
+                  </div>
+                </a>
+                <div class="title-product">
+                  <h3>SCOTEX Spike</h3>
+                </div>
+                <div class="description-prod">
+                  <p>
+                    The new Mini E-Quad SCOTEX Spike is an electric quad
+                    equipped with 4 pneumatic tires driven by a 250W electric
+                    motor. Power is transmitted to the rear axle via a chain.
+                    The operating voltage is 24V with a battery capacity of 6.5
+                    Ah. The quad is accelerated on the right handlebar using the
+                    twistgrip and braked using the handbrake handle on the left
+                    handlebar, which actuates the disc brake on the rear axle.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="wcf-left">
+                    <div class="price-wrapper">
+                      <span class="price-old">449,00€</span>
+                      <span class="price-new">299,00€</span>
+                    </div>
+                  </div>
+                  <div class="wcf-right">
+                    <a
+                      href="#"
+                      class="buy-btn"
+                    >
+                      <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="my-modal language">
+      <div class="my-modal-content">
+        <div class="my-modal-header">
+          <h2>Language</h2>
+          <div class="my-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+              version="1.1"
+              id="Capa_1"
+              width="20px"
+              height="20px"
+              viewBox="0 0 41.756 41.756"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M27.948,20.878L40.291,8.536c1.953-1.953,1.953-5.119,0-7.071c-1.951-1.952-5.119-1.952-7.07,0L20.878,13.809L8.535,1.465   c-1.951-1.952-5.119-1.952-7.07,0c-1.953,1.953-1.953,5.119,0,7.071l12.342,12.342L1.465,33.22c-1.953,1.953-1.953,5.119,0,7.071   C2.44,41.268,3.721,41.755,5,41.755c1.278,0,2.56-0.487,3.535-1.464l12.343-12.342l12.343,12.343   c0.976,0.977,2.256,1.464,3.535,1.464s2.56-0.487,3.535-1.464c1.953-1.953,1.953-5.119,0-7.071L27.948,20.878z"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="my-modal-body">
+          <p>So Which language would you like us to use?</p>
+          <form class="my-modal-form">
+            <label class="my-modal-label">
+              <input
+                type="radio"
+                name="radio"
+                checked
+              />
+              <span>Deutsch</span>
+            </label>
+            <label class="my-modal-label">
+              <input
+                type="radio"
+                name="radio"
+                checked
+              />
+              <span>English</span>
+            </label>
+            <label class="my-modal-label">
+              <input
+                type="radio"
+                name="radio"
+              />
+              <span>Français</span>
+            </label>
+          </form>
+        </div>
+        <div class="my-modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+          >
+            cancel
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+          >
+            save
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__block-2">
+          <div class="accordion__list">
+            <section
+              class="footer-box footer-box-service-accordion accordion__item"
+            >
+              <input
+                type="checkbox"
+                checked=""
+              />
+              <i></i>
+              <h4 class="h4 footer-box-title accordion__title">SERVICE</h4>
+              <div class="footer-box-content accordion__info">
+                <ul class="services accordion__list-inner">
+                  <li>
+                    <a href="https://www.scotex.de/en/contact/">Contact</a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Ruecksendung/"
+                      >Rücksendung</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/cart/"> Cart </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/my-account/">Account</a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/my-wish-list/">
+                      Wish list
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/my-gift-registry/">
+                      My gift registry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/gift-registry/?wishid=">
+                      Public gift registries
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/my-downloads/"
+                      >My downloads</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="footer-box footer-box-service-accordion accordion__item"
+            >
+              <input
+                type="checkbox"
+                checked=""
+              />
+              <i></i>
+              <h4 class="h4 footer-box-title accordion__title">INFORMATION</h4>
+              <div class="footer-box-content accordion__info">
+                <ul class="accordion__list-inner">
+                  <li>
+                    <a href="https://www.scotex.de/en/Battery-disposal-BattG/"
+                      >Battery disposal / BattG</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/About-Us-scotex/"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Terms-and-Conditions/"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Privacy-Policy/"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Shipping-and-Charges/"
+                      >Shipping and Charges</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Right-of-Withdrawal/"
+                      >Right of Withdrawal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/How-to-order/"
+                      >How to order?</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Credits/">Credits</a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/newsletter/"
+                      >Newsletter</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section
+              class="footer-box footer-box-service-accordion accordion__item"
+            >
+              <input
+                type="checkbox"
+                checked=""
+              />
+              <i></i>
+              <h4 class="h4 footer-box-title accordion__title">CATEGORIES</h4>
+              <div class="footer-box-content accordion__info">
+                <ul class="information accordion__list-inner">
+                  <li>
+                    <a href="https://www.scotex.de/en/about-us/">about us</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.scotex.de/en/Scooter-models/"
+                      class="exp"
+                      >Scooter models
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Children-s-vehicles/"
+                      >Children's vehicles
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/used-returns/"
+                      >used &amp; returns
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Spare-parts/"
+                      >Spare parts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Accessories/"
+                      >Accessories
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scotex.de/en/Packing-material/"
+                      >Packing material
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="footer__block-1">
+            <section class="footer-box footer-box-newsletter">
+              <h4 class="h4 footer-box-title">Newsletter</h4>
+              <div class="footer-box-content">
+                <p class="small">
+                  Get informed about the latest products and offers per email.
+                </p>
+                <form
+                  class="form-inline footer--newsletter-form"
+                  action="https://www.kaufbei.tv/index.php?"
+                  method="post"
+                >
+                  <div class="hidden">
+                    <input
+                      type="hidden"
+                      name="stoken"
+                      value="144A45A6"
+                    />
+                    <input
+                      type="hidden"
+                      name="lang"
+                      value="0"
+                    />
+                    <input
+                      type="hidden"
+                      name="fnc"
+                      value="fill"
+                    />
+                    <input
+                      type="hidden"
+                      name="cl"
+                      value="newsletter"
+                    />
+                    <input
+                      type="hidden"
+                      name="anid"
+                      value="c0465be5caddba97266dafc205d267ad"
+                    />
+                  </div>
+
+                  <label
+                    class="sr-only"
+                    for="footer_newsletter_oxusername"
+                    >Newsletter</label
+                  >
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="editval[oxuser__oxusername]"
+                    id="footer_newsletter_oxusername"
+                    value=""
+                  />
+                  <button
+                    class="send-email"
+                    type="submit"
+                  >
+                    <svg
+                      width="16"
+                      height="12"
+                      viewBox="0 0 16 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.5303 6.53033C15.8232 6.23744 15.8232 5.76256 15.5303 5.46967L10.7574 0.696698C10.4645 0.403805 9.98959 0.403805 9.6967 0.696698C9.40381 0.989592 9.40381 1.46447 9.6967 1.75736L13.9393 6L9.6967 10.2426C9.40381 10.5355 9.40381 11.0104 9.6967 11.3033C9.98959 11.5962 10.4645 11.5962 10.7574 11.3033L15.5303 6.53033ZM6.55671e-08 6.75L15 6.75L15 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z"
+                        fill="black"
+                      ></path>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </section>
+            <ul class="menu-footer__list">
+              <li class="menu-footer__item">
+                <i
+                  class="far fa-envelope"
+                  aria-hidden="true"
+                ></i>
+                <a href="mailto:post@kaufbei.tv">info@scotex.de</a>
+              </li>
+              <li class="menu-footer__item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:057312451590">49 7623 - 468 412 0</a>
+              </li>
+              <li class="menu-footer__item">
+                <i class="fa-regular fa-clock"></i>
+                Support & Contact from Mo - Thu 9:00 - 12:00h & 14:00 - 16:00h
+                on Fridays 9:00 - 12:00h
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block-3">
+          <div class="col-sm-3 social-links">
+            <div class="bottom--social-box">
+              <a
+                class="fb"
+                target="_blank"
+                href="https://www.facebook.com/ScotexDE"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="instagram"
+                target="_blank"
+                href="https://www.instagram.com/scotexde/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="yb"
+                target="_blank"
+                href="https://www.youtube.com/channel/UChgD6gtjaj_FNtSSwO5ZuFg"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 copyright">
+            <span>
+              Online shop for emobility such as electric scooters, e-scooters,
+              spare parts, tuning & accessories and much more
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4fec65f562.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
