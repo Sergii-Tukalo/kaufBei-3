@@ -1681,10 +1681,10 @@ input.star:checked ~ .rev-box {
   }
 }
 .product__img.active-white .img_producto_container.swiper-slide-active .img_producto {
-  background-image: url("../../images/13.jpg") !important;
+  background-image: url("../../images/14.jpg") !important;
 }
 .product__img.active-black .img_producto_container.swiper-slide-active .img_producto {
-  background-image: url("../../images/14.jpg") !important;
+  background-image: url("../../images/13.jpg") !important;
 }
 .product__details {
   flex: 5;
